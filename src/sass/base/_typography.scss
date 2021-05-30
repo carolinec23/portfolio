@@ -1,0 +1,108 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+@font-face {
+	font-family: "YesevaOne-Regular";
+	src: local("YesevaOne-Regular"),
+		url("../../fonts/YesevaOne-Regular.ttf") format("truetype");
+}
+
+:root {
+	/* Base values */
+	--font-size-base: 1em;
+	--scale-ratio: 1.2;
+}
+
+@include xs {
+	:root {
+		--font-size-base: 1.05em;
+		--scale-ratio: 1.24;
+	}
+}
+
+@include sm {
+	:root {
+		--font-size-base: 1.15em;
+		--scale-ratio: 1.28;
+	}
+}
+
+@include md {
+	:root {
+		--font-size-base: 1.2em;
+		--scale-ratio: 1.32;
+	}
+}
+
+@include lg {
+	:root {
+		--font-size-base: 1.25m;
+		--scale-ratio: 1.36;
+	}
+}
+
+@include xl {
+	:root {
+		--font-size-base: 1.27em;
+		--scale-ratio: 1.38;
+	}
+}
+
+body {
+	font-size: var(--font-size-base);
+	font-family: $font-primary, $font-fallback;
+	font-weight: $font-weight-default;
+	color: $neutral-dark;
+}
+
+h1,
+.text-xl {
+	font-family: $font-secondary, $font-fallback;
+	font-size: calc(
+		1em * var(--scale-ratio) * var(--scale-ratio) * var(--scale-ratio) *
+			var(--scale-ratio)
+	);
+	color: $blue-dark;
+}
+
+h2,
+.text-lg {
+	font-family: $font-secondary, $font-fallback;
+	font-size: calc(
+		1em * var(--scale-ratio) * var(--scale-ratio) * var(--scale-ratio)
+	);
+}
+
+h3,
+i,
+.text-md {
+	font-size: calc(1em * var(--scale-ratio) * var(--scale-ratio));
+}
+
+h4,
+a,
+.text-sm {
+	font-size: calc(1em * var(--scale-ratio));
+}
+
+.text-xs {
+	font-size: calc(var(--font-size-base) / var(--scale-ratio));
+}
+
+a {
+	text-decoration: none;
+	font-family: $font-secondary;
+}
+
+#neutral {
+	color: $neutral-light;
+}
+
+/* Utility classes */
+.truncate {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}

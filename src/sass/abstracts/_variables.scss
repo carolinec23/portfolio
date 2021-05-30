@@ -1,0 +1,30 @@
+/* Colors */
+$blue-light: #98c2c5;
+$blue-dark: #030d69;
+$neutral-light: #f2f2f2;
+$neutral-dark: #020202;
+$gray-light: #bbbbbb;
+$gray-dark: #646464;
+$red: #d36464;
+$pink: #e9c2c2;
+$orange: #e2c068;
+$lime: #ccc86f;
+$green-dark: #79a28e;
+$green-light: #b7c8a1;
+
+/* Breakpoints */
+$media-turtle: 480px;
+$media-cat: 768px;
+$media-horse: 1024px;
+$media-elephant: 1280px;
+$media-whale: 1440px;
+
+/* Font */
+$font-primary: "Poppins";
+$font-secondary: "YesevaOne-Regular";
+$font-fallback: sans-serif;
+$font-weight-default: normal;
+
+/* Transitions */
+$default-transition-duration: 0.2s;
+$default-transition: all $default-transition-duration ease-in-out;

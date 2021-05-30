@@ -1,0 +1,86 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+@-webkit-keyframes hang-on-hover {
+	0% {
+		-webkit-transform: translateY(8px);
+		transform: translateY(8px);
+	}
+	50% {
+		-webkit-transform: translateY(4px);
+		transform: translateY(4px);
+	}
+	100% {
+		-webkit-transform: translateY(8px);
+		transform: translateY(8px);
+	}
+}
+
+@keyframes hang-on-hover {
+	0% {
+		-webkit-transform: translateY(8px);
+		transform: translateY(8px);
+	}
+	50% {
+		-webkit-transform: translateY(4px);
+		transform: translateY(4px);
+	}
+	100% {
+		-webkit-transform: translateY(8px);
+		transform: translateY(8px);
+	}
+}
+
+@-webkit-keyframes hang-on-hover-sink {
+	100% {
+		-webkit-transform: translateY(8px);
+		transform: translateY(8px);
+	}
+}
+
+@keyframes hang-on-hover-sink {
+	100% {
+		-webkit-transform: translateY(8px);
+		transform: translateY(8px);
+	}
+}
+
+.arrow__container a {
+	display: none;
+
+	@include md {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		i {
+			font-size: 36px;
+			-webkit-transform: perspective(1px) translateZ(0);
+			transform: perspective(1px) translateZ(0);
+			-webkit-animation-name: hang-on-hover-sink, hang-on-hover;
+			animation-name: hang-on-hover-sink, hang-on-hover;
+			-webkit-animation-duration: 0.3s, 1.5s;
+			animation-duration: 0.3s, 1.5s;
+			-webkit-animation-delay: 0s, 0.3s;
+			animation-delay: 0s, 0.3s;
+			-webkit-animation-timing-function: ease-out, ease-in-out;
+			animation-timing-function: ease-out, ease-in-out;
+			-webkit-animation-iteration-count: 1, infinite;
+			animation-iteration-count: 1, infinite;
+			-webkit-animation-fill-mode: forwards;
+			animation-fill-mode: forwards;
+			-webkit-animation-direction: normal, alternate;
+			animation-direction: normal, alternate;
+
+			transition: all 0.2s ease-in-out;
+
+			&:hover {
+				cursor: pointer;
+				color: $orange;
+			}
+		}
+	}
+}
+
+/* CSS button hang effect on hover: */
+/* https://codepen.io/techshiva/pen/jRVWxG */

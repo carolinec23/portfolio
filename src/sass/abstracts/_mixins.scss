@@ -1,0 +1,28 @@
+@import "./variables";
+
+@mixin xs {
+	@media screen and (min-width: $media-turtle) {
+		@content;
+	}
+}
+
+@mixin sm {
+	@media screen and (min-width: $media-cat) {
+		@content;
+	}
+}
+@mixin md {
+	@media screen and (min-width: $media-horse) {
+		@content;
+	}
+}
+@mixin lg {
+	@media screen and (min-width: $media-elephant) {
+		@content;
+	}
+}
+@mixin xl {
+	@media screen and (min-width: $media-whale) {
+		@content;
+	}
+}
