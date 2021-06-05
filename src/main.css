@@ -6,20 +6,20 @@
 /* Breakpoints */
 /* Font */
 /* Transitions */
-/* Colors */
-/* Breakpoints */
-/* Font */
-/* Transitions */
-/* Colors */
-/* Breakpoints */
-/* Font */
-/* Transitions */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 @font-face {
   font-family: "YesevaOne-Regular";
   src: local("YesevaOne-Regular"), url("../../fonts/YesevaOne-Regular.ttf") format("truetype");
 }
 
+/* Colors */
+/* Breakpoints */
+/* Font */
+/* Transitions */
+/* Colors */
+/* Breakpoints */
+/* Font */
+/* Transitions */
 :root {
   /* Base values */
   --font-size-base: 1em;
@@ -165,12 +165,12 @@ a {
   }
 }
 
-.arrow__container a {
+.arrow__container {
   display: none;
 }
 
 @media screen and (min-width: 1024px) {
-  .arrow__container a {
+  .arrow__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -181,7 +181,7 @@ a {
         -ms-flex-align: center;
             align-items: center;
   }
-  .arrow__container a i {
+  .arrow__container i {
     font-size: 36px;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
@@ -202,7 +202,7 @@ a {
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
   }
-  .arrow__container a i:hover {
+  .arrow__container i:hover {
     cursor: pointer;
     color: #e2c068;
   }
@@ -311,11 +311,6 @@ header a {
 .menu__action:hover {
   cursor: pointer;
   background-color: #030d69;
-}
-
-.app__container {
-  width: 100%;
-  overflow-x: hidden;
 }
 
 /* Colors */
@@ -1135,9 +1130,9 @@ h1 {
   }
 }
 
-@font-face {
-  font-family: "YesevaOne-Regular";
-  src: local("YesevaOne-Regular"), url("./fonts/YesevaOne-Regular.ttf") format("truetype");
+.app__container {
+  width: 100%;
+  overflow-x: hidden;
 }
 
 * {
@@ -1146,4 +1141,4 @@ h1 {
   margin: 0;
   padding: 0;
 }
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=main.css.map */

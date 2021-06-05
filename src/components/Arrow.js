@@ -5,7 +5,7 @@ import { IoIosArrowDown } from 'react-icons/io';
 const Arrow = () => {
     return (
         <div className="arrow__container" >
-            <a href="" id="neutral"><i><IoIosArrowDown /></i></a>
+            <i id="neutral"><IoIosArrowDown /></i>
         </div>
     );
 }

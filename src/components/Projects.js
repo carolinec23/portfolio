@@ -38,7 +38,7 @@ const Projects = () => {
                 {renderProjects()}
             </div>
             <div className="projects__github">
-                <a href="https://github.com/carolinec23" target="_blank">
+                <a href="https://github.com/carolinec23" target="_blank" rel="noreferrer">
                     <img src={Note} alt="github" />
                 </a>
             </div>

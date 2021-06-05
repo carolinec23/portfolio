@@ -1,25 +1,20 @@
 @import "sass/abstracts/mixins";
 @import "sass/abstracts/variables";
+@import "sass/abstracts/fonts";
 
 @import "sass/base/reset";
 @import "sass/base/typography";
 
 @import "sass/components/arrow";
 
-@import "sass/layout/header";
-
-@import "sass/app";
+@import "sass/header";
 @import "sass/home";
 @import "sass/info";
 @import "sass/education";
 @import "sass/projects";
 @import "sass/project";
 
-@font-face {
-	font-family: "YesevaOne-Regular";
-	src: local("YesevaOne-Regular"),
-		url("./fonts/YesevaOne-Regular.ttf") format("truetype");
-}
+@import "sass/app";
 
 * {
 	box-sizing: border-box;
