@@ -6,12 +6,13 @@ import Info from './components/Info';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import './sass/_app.scss';
+import { InfoData } from './data/InfoData';
 
 const App = () => {
   return (
     <div className="app__container">
       <Home />
-      <Info />
+      <Info data={InfoData}/>
       <Education />
       <Skills />
       <Projects />

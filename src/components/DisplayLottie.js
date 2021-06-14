@@ -7,7 +7,7 @@ class DisplayLottie extends React.Component {
             <Lottie 
                 animationData={this.props.animation} 
                 autoplay={true}
-                loop={true}
+                loop={this.props.loop}
             />
         );
     }

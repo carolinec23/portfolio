@@ -1,6 +1,6 @@
 import React from 'react';
-import '../sass/_contact.scss';
-import Bubbles from '../assets/bubbles.svg';
+import '../sass/layout/_contact.scss';
+import Bubbles from '../assets/contact/bubbles.svg';
 import DisplayLottie from './DisplayLottie';
 import Animation from '../assets/lottie/dog.json';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';     
@@ -14,13 +14,13 @@ const Contact = () => {
             <div className="contact__content">
                 <div className="contact__image">
                     <img src={Bubbles} alt="bubbles" />
-                    <DisplayLottie animation={Animation} />
+                    <DisplayLottie animation={Animation} loop={true}/>
                 </div>
                 <div className="contact__info">
                     <h3>carolinecicha@gmail.com</h3>
                     <div className="contact__icons">
-                        <a href="https://github.com/carolinec23"><i id="text-lg"><FaGithub /></i></a>
-                        <a href="https://www.linkedin.com/in/caroline-cich%C3%A1-8484b220b/"><i id="text-lg"><FaLinkedin /></i></a>
+                        <a href="https://github.com/carolinec23" target="_blank" rel="noreferrer"><i id="text-lg" ><FaGithub /></i></a>
+                        <a href="https://www.linkedin.com/in/caroline-cich%C3%A1-8484b220b/" target="_blank" rel="noreferrer"><i id="text-lg"><FaLinkedin /></i></a>
                     </div>
                 </div>
             </div>

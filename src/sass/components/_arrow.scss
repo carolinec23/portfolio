@@ -80,6 +80,10 @@
 			}
 		}
 	}
+
+	@include lg {
+		margin-top: -1.6em;
+	}
 }
 
 /* CSS button hang effect on hover: */

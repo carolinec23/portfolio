@@ -1,9 +1,9 @@
 import React from 'react';
-import '../sass/_home.scss';
+import '../sass/layout/_home.scss';
 import Header from './Header';
 import Arrow from './Arrow';
 import DisplayLottie from './DisplayLottie';
-import Banner from '../assets/blob.png';
+import Banner from '../assets/home/blob.png';
 import Animation from '../assets/lottie/computer1.json';
 import { Link } from 'react-scroll';
 
@@ -19,7 +19,7 @@ const Home = () => {
                 </div>
                 <div className="home__image">
                     <img src={Banner} alt="Banner" />
-                    <DisplayLottie animation={Animation} />
+                    <DisplayLottie animation={Animation} loop={false}/>
                 </div>
             </div>    
             <Link to="info" smooth={true}><Arrow /></Link>

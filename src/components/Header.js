@@ -1,5 +1,5 @@
 import React from 'react';
-import '../sass/_header.scss';
+import '../sass/layout/_header.scss';
 import { Link } from 'react-scroll';
 //import { GiHamburgerMenu } from 'react-icons/gi';
 

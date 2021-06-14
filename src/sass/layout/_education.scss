@@ -1,0 +1,114 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.education__container {
+	width: 100vw;
+	max-width: 100%;
+	color: $neutral-light;
+	overflow: hidden;
+}
+
+.border__top {
+	background-image: url("../../assets/education/education_borderTop.svg");
+}
+
+.border__bottom {
+	background-image: url("../../assets/education/education_borderBottom.svg");
+}
+
+.education__border {
+	background-position: center;
+	background-repeat: repeat-x;
+	background-size: cover;
+	min-height: 120px;
+}
+
+.education__wrapper {
+	background-color: $lime;
+	padding: 0 22px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	h2 {
+		margin-top: -10px;
+		margin-bottom: 18px;
+	}
+}
+
+.education__content {
+	display: flex;
+	flex-direction: column;
+	color: $neutral-dark;
+
+	@include xs {
+		max-width: 70%;
+	}
+
+	@include sm {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		justify-content: center;
+		align-items: center;
+		max-width: 90%;
+	}
+
+	@include md {
+		grid-template-columns: repeat(6, 1fr);
+		max-width: 80%;
+	}
+
+	@include lg {
+		max-width: 70%;
+	}
+}
+
+.school {
+	grid-column: span 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	@include md {
+		grid-column: span 2;
+	}
+}
+
+.school__text {
+	margin-left: 12px;
+
+	h4 {
+		font-family: $font-secondary;
+	}
+}
+
+.line {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	img {
+		max-height: 100%;
+		max-width: 100%;
+	}
+
+	@include sm {
+		transform: rotateZ(-90deg) scale(1.2);
+		grid-column: span 1;
+	}
+
+	@include md {
+		margin-left: -20px;
+	}
+
+	@include lg {
+		transform: rotateZ(-90deg) scale(1.5);
+		margin-left: -40px;
+	}
+
+	@include xl {
+		transform: rotateZ(-90deg) scale(1.7);
+		margin-left: -40px;
+	}
+}

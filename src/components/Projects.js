@@ -1,7 +1,7 @@
 import React from 'react';
-import "../sass/_projects.scss";
+import "../sass/layout/_projects.scss";
 import Project from './Project';
-import Note from '../assets/handwriting.svg';
+import Note from '../assets/projects/handwriting.svg';
 import { ProjectData } from '../data/ProjectData';
 
 const Projects = () => {

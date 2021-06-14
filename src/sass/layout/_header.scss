@@ -1,0 +1,81 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+header {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-bottom: 40px;
+
+	a {
+		text-decoration: none;
+		color: $neutral-light;
+	}
+
+	@include md {
+		margin-bottom: 0;
+	}
+}
+
+/* .menu__button {
+	i {
+		font-size: 24px;
+		transition: all 0.2s ease-in-out;
+
+		&:hover {
+			cursor: pointer;
+			color: $orange;
+		}
+	}
+
+	@include md {
+		display: none;
+	}
+} */
+
+.menu__options {
+	display: none;
+
+	@include md {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		padding: 1em 0;
+
+		ul {
+			list-style: none;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 1em;
+		}
+
+		li {
+			margin-left: 0.5em;
+			transition: $default-transition;
+
+			&:hover {
+				cursor: pointer;
+				transform: scale(1.1);
+			}
+		}
+	}
+
+	@include lg {
+		li {
+			margin-left: 1.5em;
+		}
+	}
+}
+
+.menu__action {
+	background-color: $blue-dark;
+	padding: 0.4em;
+	border-radius: 16px;
+	transition: $default-transition;
+
+	&:hover {
+		cursor: pointer;
+		background-color: $blue-light;
+	}
+}

@@ -1,11 +1,9 @@
 import React from 'react';
-import '../sass/_education.scss';
-import SchoolOne from '../assets/school_1.svg';
-import SchoolTwo from '../assets/school_2.svg';
-import LineOne from '../assets/line_1.svg';
-import LineTwo from '../assets/line_2.svg';
-//import BorderTop from '../assets/education_borderTop.svg';
-//import BorderBottom from '../assets/education_borderBottom.svg';
+import '../sass/layout/_education.scss';
+import SchoolOne from '../assets/education/school_1.svg';
+import SchoolTwo from '../assets/education/school_2.svg';
+import LineOne from '../assets/education/line_1.svg';
+import LineTwo from '../assets/education/line_2.svg';
 
 const Education = () => {
     return (

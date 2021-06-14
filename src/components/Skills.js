@@ -1,12 +1,12 @@
 import React from 'react';
-import "../sass/_skills.scss";
+import "../sass/layout/_skills.scss";
 import DisplayLottie from './DisplayLottie';
 import Animation from '../assets/lottie/computer2.json';
-import Circles from '../assets/circles.svg';
-import CirclePink from '../assets/circle_pink.svg';
-import EnglishIcon from '../assets/united_kingdom.svg';
-import SlovakIcon from '../assets/slovakia.svg';
-import GermanIcon from '../assets/germany.svg';
+import Circles from '../assets/skills/circles.svg';
+import CirclePink from '../assets/skills/circle_pink.svg';
+import EnglishIcon from '../assets/skills/united_kingdom.svg';
+import SlovakIcon from '../assets/skills/slovakia.svg';
+import GermanIcon from '../assets/skills/germany.svg';
 import { FaHtml5, FaCss3Alt, FaSass, FaJs, FaReact, FaFigma, FaFire, FaPython, FaGitAlt } from 'react-icons/fa';
 
 
@@ -20,7 +20,7 @@ const Skills = () => {
             </div>
             <div className="skills__circlePink">
                 <img src={CirclePink} alt="circle" />
-                <DisplayLottie animation={Animation} />
+                <DisplayLottie animation={Animation} loop={true}/>
             </div>
             <div className="skills__list">
                 <ul>

@@ -1,0 +1,85 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.home__container {
+	height: 100vh;
+	width: 100vw;
+	max-width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding: 12px 24px;
+	background-color: $blue-light;
+	background-image: url("../../assets/home/home_small.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+
+	@include md {
+		background-image: url("../../assets/home/home_large.svg");
+	}
+}
+
+.home__wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	@include md {
+		display: grid;
+		grid-template-columns: repeat(8, 1fr);
+		margin: auto 0;
+	}
+}
+
+.home__title {
+	margin-bottom: 40px;
+	padding: 0 20px;
+
+	@include md {
+		grid-column: 1/5;
+		margin: 0 auto;
+	}
+
+	@include lg {
+		margin-bottom: 100px;
+	}
+
+	@include xl {
+		margin-bottom: 160px;
+	}
+}
+
+h1 {
+	margin-bottom: 6px;
+}
+
+.home__image {
+	display: flex;
+	max-width: 75%;
+	justify-content: center;
+	margin-top: 40px;
+	position: relative;
+
+	img {
+		position: absolute;
+		width: 100%;
+	}
+
+	@include xs {
+		max-width: 60%;
+		margin-top: 60px;
+	}
+
+	@include sm {
+		max-width: 40%;
+	}
+
+	@include md {
+		margin: 0;
+		grid-column: 5/8;
+		max-width: 100%;
+	}
+}

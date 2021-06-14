@@ -1,5 +1,5 @@
 import React from 'react';
-import '../sass/_project.scss';
+import '../sass/components/_project.scss';
 import { FaFileCode, FaLaptop } from 'react-icons/fa';
 
 const Project = ( props ) => {
@@ -10,8 +10,10 @@ const Project = ( props ) => {
                 <h4>{props.title}</h4>
                 <p className="text-xs">{props.description}</p>    
                 <div className="project__links">
-                    <a href={props.demoLink}><FaLaptop /></a>
-                    <a href={props.codeLink}><FaFileCode /></a>
+                    <a href={props.codeLink} id="code_link" target="_blank" rel="noreferrer"><FaFileCode /></a>
+                    <a href={props.demoLink} id="demo_link" target="_blank" rel="noreferrer"><FaLaptop /></a>
+                    <p id="demo_text">See the live demo</p>
+                    <p id="code_text">See the source code</p>
                 </div>   
             </div>
         </div>

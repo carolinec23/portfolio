@@ -6,13 +6,15 @@
 @import "sass/base/typography";
 
 @import "sass/components/arrow";
+@import "sass/components/project";
 
-@import "sass/header";
-@import "sass/home";
-@import "sass/info";
-@import "sass/education";
-@import "sass/projects";
-@import "sass/project";
+@import "sass/layout/contact";
+@import "sass/layout/education";
+@import "sass/layout/header";
+@import "sass/layout/home";
+@import "sass/layout/info";
+@import "sass/layout/projects";
+@import "sass/layout/skills";
 
 @import "sass/app";
 
